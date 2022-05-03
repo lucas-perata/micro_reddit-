@@ -1,24 +1,14 @@
 # README
+El proyecto consiste en producir una versión básica de Reddit con usuarios, posteos y comentarios a los posteos. El trabajo se realizó en Ruby on Rails y no se aplicó un Front-End por lo que la aplicación se accede por medio de bin/rails console. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Creción usuario 
 
-Things you may want to cover:
+User.new(name:" ") 
 
-* Ruby version
+## Creación post 
 
-* System dependencies
+Post.new(user_id: int, title: " ", body: " ") 
 
-* Configuration
+## Creación comentario 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Comment.new(user_id: int, post_id: int, body: " ") 
